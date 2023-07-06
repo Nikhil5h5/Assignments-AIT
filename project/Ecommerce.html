@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=+05 , initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    header{
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 5px ;
+      background-color: #E3E6F3;
+      position: sticky;
+      left: 0px;
+      top: 0px;
+      box-shadow: 0 5px 15px rgba(0, o,0, 0);
+      padding: 20px 80px;
+    }
+    .navbar{
+      display: flex;
+    }
+    .navbar li{
+      list-style: none;
+      padding: 0px 20px;
+    }
+    .navbar li a{
+      text-decoration: none;
+      color: #1a1a1a;
+      font-size: 15px;
+
+    }
+    .navbar li a:hover{
+      color:#088178;
+    }
+    .banner img{
+      width: 100%;
+      height: 500px;
+    }
+    .offers h4{
+      position: relative;
+      top: -400px;
+      left: 30px;
+      }
+      .offers h2{
+        position: relative;
+        top: -398px;
+        left: 35px;
+      }
+      .offers h1{
+        position: relative;
+        color:#088178;
+        top:-395px;
+        left: 35px;
+      }
+      .offers p{
+        position: relative;
+        top: -390px;
+        left: 35px;
+      }
+      .offers button{
+        position: relative;
+        top: -390px;
+        left: 40px;
+        border: 0;
+        background-color: transparent;
+        color: #088178;
+        padding: 13px 80px;
+        cursor: pointer;
+        font-weight: 700;
+        font-size: 15px;
+        background-repeat: no-repeat;
+      }
+      .offers img{
+        position: relative;
+        top: -370px;
+        left: -160px;
+      }
+      .feautres{
+        top: -40
+      }
+      .features{
+       margin: 300px;
+       
+      }
+      .features{
+        position: relative;
+        top: -200px;
+        display: flex;
+        justify-content: space-evenly;
+      }
+      .f1,.f2,.f3,.f4,.f5,.f6{
+        background-color: aliceblue;
+        border-radius: 10px;
+        border: 1px solid;
+      }
+      .f1 button{
+        background-color:palevioletred ;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .f2 button{
+        background-color:greenyellow;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .f3 button{
+        background-color:lightblue;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .f4 button{
+        background-color:blueviolet ;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .f5 button{
+        background-color:pink;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .f6 button{
+        background-color: yellowgreen;
+        margin: 15px 25px;
+        border-radius: 4px;
+       border-color: #E3E6F3;
+       color: green;
+       height: 30px;
+      }
+      .text{
+        text-align: center;
+        position: relative;
+        top: -130px;
+      }
+      .text h6{
+       color: black;
+      }
+      .products{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -100px;
+      }
+      .p1,.p2,.p3,.p4{
+      background-color: whitesmoke;
+        border-radius: 10px;
+      }
+      .p1 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p2 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p3 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p4 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p1 i{
+        position: relative;
+        top: -10px;
+      }
+      .p2 i{
+        position: relative;
+        top: -10px;
+      }
+      .p3 i{
+        position: relative;
+        top: -10px;
+      }
+      .p4 i{
+        position: relative;
+        top: -10px;
+      }
+      .fa-solid fa-cart-shopping{
+        position: relative;
+        display: flex;
+        justify-content: end;
+      }
+      .product{
+        display: flex;
+        justify-content: space-evenly;
+        position: relative;
+        top: -100px;
+      }
+      .p5,.p6,.p7,.p8{
+      background-color: whitesmoke;
+        border-radius: 10px;
+      }
+      .p5 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p6 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p7 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p8 img{
+        width: 300px;
+        height: 300px;
+        border-radius: 3px;
+      }
+      .p5 i{
+        position: relative;
+        top: -10px;
+      }
+      .p6 i{
+        position: relative;
+        top: -10px;
+      }
+      .p7 i{
+        position: relative;
+        top: -10px;
+      }
+      .p8i{
+        position: relative;
+        top: -10px;
+      }
+      .b2 img{
+        width: 100%;
+        height: 200px;
+      }
+      .b2 h3{
+       position: relative;
+       top: -200px;
+       color: whitesmoke;
+       left: 650px;
+      }
+      .b2 h1{
+       position: relative;
+       top: -200px;
+       color: whitesmoke;
+       left: 500px;
+       height: 40px;
+      }
+      .b2 button{
+        position: relative;
+        top: -230px;
+        border-radius: 5px;
+        left: 660px;
+        padding: 10px;
+      }
+      .fa-solid fa-cart-shopping{
+        position: relative;
+        display: flex;
+      }
+      .product button a{
+      position: relative;
+      top: -20px;
+      left: 10px;
+      }
+
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <img src="C:\Users\Obul Reddy\Downloads\images (1)\images\logo.png" alt="logo">
+    </div>
+    <nav>
+      <ul class="navbar">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">blog</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+        <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="banner">
+    <img src="C:\Users\Obul Reddy\Downloads\images (1)\images\hero4.png" alt="hero4">
+  </div>
+  <div class="offers">
+    <h4>Trade-in-offer</h4>
+    <h2>Super value deals</h2>
+    <h1>On all products</h1>
+    <p>save more with cupons & up to 70% off!</p>
+    <button>Shop Now</button>
+    <img src="C:\Users\Obul Reddy\Downloads\images (1)\images\button.png" alt="button">
+  </div>
+    <section class="features">
+      <div class="f1">
+        <img src="C:\Users\Obul Reddy\Downloads\images (1)\images\features\f1.png" alt="f1"><br><br>
+        <button>Free shipping</button>
+      </div>
+      <div class="f2">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\features\f2.png" alt="f2"><br><br>
+        <button>online order</button>
+      </div>
+      <div class="f3">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\features\f3.png" alt="f3"><br><br>
+        <button>save money</button>
+      </div>
+      <div class="f4">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\features\f4.png" alt="f4"><br><br>
+        <button>promotions</button>
+      </div>
+      <div class="f5">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\features\f5.png" alt="f5"><br><br>
+        <button>happy sell</button>
+      </div>
+      <div class="f6">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\features\f6.png" alt="f6"><br><br>
+        <button>24/7 support</button>
+      </div>
+    </section>
+    <div class="text">
+      <h1>Featured Products</h1>
+      <h6>summer collection new mardin design</h4>
+    </div>
+    <section class="products">
+      <div class="p1">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f1.jpg" alt="p1">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+       <br><br> <i class="fa-solid fa-dollar-sign">78</i><br><br>
+       <i class="fa-solid fa-cart-shopping"></i>
+       
+      </div>
+      <div class="p2">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f2.jpg" alt="p2">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;">
+        </i><i class="fa-solid fa-star" style="color: #fff94d;">
+        </i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><br><br>
+        <i class="fa-solid fa-dollar-sign">78</i><br><br>
+        <i class="fa-solid fa-cart-shopping"></i>
+       
+      </div>
+      <div class="p3">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f3.jpg" alt="p3">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><br><br>
+        <i class="fa-solid fa-dollar-sign">78</i><br><br>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="p4">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f4.jpg" alt="p4">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+       <br><br> <i class="fa-solid fa-dollar-sign">78</i><br><br>
+       <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+
+    </section><br><br><br><br>
+    
+    <section class="product">
+      <div class="p5">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f5.jpg" alt="p5">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+       <br><br> <i class="fa-solid fa-dollar-sign">78</i><br><br>
+       <button><a href=""><i class="fa-solid fa-cart-shopping"></i></a></button>
+       
+      </div>
+      <div class="p6">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f6.jpg" alt="p6">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;">
+        </i><i class="fa-solid fa-star" style="color: #fff94d;">
+        </i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><br><br>
+        <i class="fa-solid fa-dollar-sign">78</i><br><br>
+        <i class="fa-solid fa-cart-shopping"></i>
+       
+      </div>
+      <div class="p7">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f7.jpg" alt="p7">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><br><br>
+        <i class="fa-solid fa-dollar-sign">78</i><br><br>
+        <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+      <div class="p8">
+        <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\products\f8.jpg" alt="p8">
+        <h3>addidas</h3>
+        <h2>Carton astronut T-shirts</h2>
+        <i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i><i class="fa-solid fa-star" style="color: #fff94d;"></i>
+       <br><br> <i class="fa-solid fa-dollar-sign">78</i><br><br>
+       <i class="fa-solid fa-cart-shopping"></i>
+      </div>
+
+    </section>
+    <div class="b2">
+      <img src="C:\Users\Obul Reddy\AppData\Local\Temp\Temp1_images (1).zip\images\banner\b2.jpg" alt="b2">
+      <h3>Repair Services</h3>
+      <h1>Up to 70% Off -All t-Shirts & Accessories
+      </h1><br>
+      <button>Explore More</button>
+    </div>
+
+  
+
+  </div>
+</body>
+</html>
