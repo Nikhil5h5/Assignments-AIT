@@ -1,0 +1,28 @@
+.container{
+     
+    border-radius: 12px;
+    padding: 20px ;
+    width: 400px;
+   margin: 140px 600px;
+   
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   
+    
+}
+h1{
+   text-align: center;
+}
+input{
+   padding: 6px;
+   width: 250px;
+   height: 30px;
+   border-radius: 5px;
+   border: 1px solid black;
+}
+#btn{
+   height: 40px;
+   width: 130px;
+   background-color: rgb(102, 115, 202);
+   border: 1px none;
+   border-radius: 5px;
+}
